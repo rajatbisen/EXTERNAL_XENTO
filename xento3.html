@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>xento3</title>
+	<style>
+		.bg-img {
+  /* The image used */
+  background-image: url("bg.jpg");
+
+  height: 500px;
+  
+  /* Center and scale the image nicely */
+ 
+  
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav-right {
+  
+  color: black;
+  float: right;
+  padding-left: 620px;
+  padding-top: 0px;
+}
+
+
+.topnav-left{
+ padding-top: 30px;
+ padding-left: 20px;
+  float: left;
+ text-decoration: none;
+}
+.topnav-left a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Navbar links */
+.topnav-right a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav-right a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 5px;
+}
+  #Post{
+          margin-right: 10px;
+          background-color: #638ED6;
+          border-radius: 10px;
+          color: white;
+          text-decoration:none; 
+
+      }
+  #Want{
+          margin-right: 20px;
+          background-color: #D82F2F;
+          border-radius: 10px;
+          color: white;
+          text-decoration:none;
+      }
+      .bottomn-nav-left{
+
+        padding-top: 300px;
+        padding-left: 50px;
+        text-decoration: none;
+      }
+      .heading{
+   			margin-left: 100px;
+   			padding-top: 250px;
+   		}
+   		.company-info{
+   			padding-top: 50px;
+   			padding-left: 200px;
+   			padding-right: 250px;
+   			line-height: 30px;
+   		}
+   		.company{
+   			margin-top: 20px;
+   			padding: 10px;
+   		}
+   		.fulltime{
+   			color: white;
+   			font-size: 10px;
+   			border: 1px solid yellowgreen;
+   			border-radius: 20px;
+   			padding: 7px;
+   			background-color: yellowgreen;
+   			margin-left: 10px;
+   		}
+   		.parttime{
+   			color: white;
+   			font-size: 10px;
+   			border: 1px solid #8A7EF6;
+   			border-radius: 20px;
+   			padding: 7px;
+   			background-color: #8A7EF6;
+   			margin-left: 10px;
+   		}
+   		.termporary{
+   			color: white;
+   			font-size: 10px;
+   			border: 1px solid red;
+   			border-radius: 20px;
+   			padding: 7px;
+   			background-color: red;
+   			margin-left: 10PX;
+   		}
+   		.freelance{
+   			color: white;
+   			font-size: 10px;
+   			border: 1px solid #8A7EF6;
+   			border-radius: 20px;
+   			padding: 7px;
+   			background-color: #8A7EF6;
+   			margin-left: 10px;
+   		}
+   		.internship{
+   			color: white;
+   			font-size: 10px;
+   			border: 1px solid grey;
+   			border-radius: 20px;
+   			padding: 7px;
+   			background-color: grey;
+   			margin-left: 10px;
+   		}
+   		.applyjob{
+   			color: white;
+   			font-size: 20px;
+   			float: right;
+   			margin-right: 50px;
+   			border: 1px solid #8A7EF6;
+   			border-radius: 5px;
+   			padding: 10px;
+   			background-color: #8A7EF6;
+   		}
+   		.job-role{
+   			font-size: 25px
+   		}
+   		.nav-num:hover{
+   			color: white;
+   			background-color: #FE6262;
+   		}
+   		#active{
+   			color: white;
+   			background-color: #FE6262;
+   		}
+   		.nav-num{
+   			display: inline-block;
+   			text-align: center;
+   			float: left;
+			border:1px solid transparent;
+			padding: 0.5rem;
+			width: 25px;
+			margin: 4px 2px;
+			color: #FE6262;
+			cursor: pointer; 
+			border-radius: 50%;
+   		}
+   		.bottum-nav{
+   			margin-top: 50px;
+   			margin-left: 300px;
+   			margin-bottom: 100px;
+   		}
+   		.inputbox{
+   			padding: 5px;
+   			border-radius: 7px;
+   		}
+		
+		
+		button{
+			border-radius: 5px;
+		}
+		ul {
+  			list-style-type: none;
+ 			margin: 0;
+  			padding: 15px;
+		}
+		.div-bottom{
+        padding-top: 50px;
+       
+        padding-left: 10px;
+        background-color:#638ED6;
+        margin-right : 10px;
+        margin-left :10px;
+        margin-top: 300px;
+        margin-bottom: 0px;;
+      }
+     input[type=text], select {
+      width: 60%;
+      padding: 12px 20px;
+      margin: 0px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea{
+      width: 90%;
+      padding: 12px 20px;
+      margin: 0px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+
+
+    }
+
+ .button1 {
+  background-color:#D82F2F; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.material-icons{
+	padding-right:0px;
+	padding-left: 20px;
+}
+
+
+	</style>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div>
+<div class="bg-img">
+  <div class="container">
+    <div class="topnav-right">
+
+      <a href="xento1.html">Home</a>
+      <a href="">About</a>
+      <a href="">Candidates</a>
+      <a href="">Blog</a>
+      <a href="">Contacts</a>
+      <a href="" style="color: white" id="Post">Post a Job</a>
+      <a href="xento2.html" style="color: white" id="Want">Want a Job</a>
+
+    </div>
+
+    
+  </div>
+    <div class="topnav-left">
+      <a href=""><b>JobApply<b></a>
+    </div>
+
+    <div class="bottomn-nav-left">
+      <p>Home -> <b>Apply Job</b></p>
+      <h1><b> Apply Job</b></h1>
+    </div>
+    	<div class="mid-of-page">
+		<div class="company-info">
+			<p style="padding: 10px">
+				<h3><span style="color: gray"> Recently Added Jobs</span></h3>
+				<span style="font-size: 25px; font-weight: 700">Hot Jobs</span>
+			</p>
+			<div class="company">
+				<p>
+					<span class="job-role"> Frontend Developement </span> <span class="parttime">Parttime</span>
+					<button class="applyjob">Apply Job</button>
+					<h4><img src="company-2.jpg" width="40px" height="40px"><label>FACEBOOK.INC</label><span style="color: gray"><i class="material-icons">&#xe55c;</i></span> WESTERN, UK</h4>
+				</p>	
+			</div>	
+			<hr>
+			<div class="company">
+				<p>
+					<span class="job-role"> Full Stack Developer</span><span class="fulltime">Fulltime</span>
+					<button class="applyjob">Apply Job</button>
+					<h5><img src="company-1.jpg" width="40px" height="40px">  GOOGLE.INC <span style="color: gray"><i class="material-icons">&#xe55c;</i></span>WESTERN, UK</h5>
+				</p>
+			</div>
+			<hr>
+			<div class="company">
+				<p>
+					<span class="job-role">Open Source Interactive Developer</span> <span class="freelance">Freelance</span>
+					<button class="applyjob">Apply Job</button>
+					<h5><img src="company-3.jpg" width="40px" height="40px"> NEW YORK TIME.INC<span style="color: gray"><i class="material-icons">&#xe55c;</i></span> WESTERN, UK</h5>
+				</p>
+			</div>
+			<hr>
+				<div class="company">
+				<p>
+					<span class="job-role"> Frontend Developement </span> <span class="internship">Internship</span>
+					<button class="applyjob">Apply Job</button>
+					<h5> <img src="company-2.jpg" width="40px" height="40px"> FACEBOOK.INC   <span style="color: gray"><i class="material-icons">&#xe55c;</i></span>WESTERN, UK</h5>
+				</p>
+			</div>
+			<hr>
+				<div class="company">
+				<p>
+					<span class="job-role"> Full Stack Developer </span> <span class="termporary">Termporary</span>
+					<button class="applyjob">Apply Job</button>
+					<h5> <img src="company-1.jpg" width="40px" height="40px">  GOOGLE.INC <span style="color: gray"><i class="material-icons">&#xe55c;</i></span> WESTERN, UK</h5>
+				</p>
+			</div>
+			<hr>
+				<div class="company">
+				<p>
+					<span class="job-role"> Open Source Interactive Developer </span> <span class="fulltime">Fulltime</span>
+					<button class="applyjob">Apply Job</button>
+					<h5><img src="company-3.jpg" width="40px" height="40px">  NEW YORK TIME.INC <span style="color: gray"><i class="material-icons">&#xe55c;</i></span>WESTERN, UK</h5>
+				</p>
+			</div>
+			<hr>
+				<div class="company">
+				<p>
+					<span class="job-role"> Frontend Developement </span> <span class="fulltime">Fulltime</span>
+					<button class="applyjob">Apply Job</button>
+					<h5> <img src="company-2.jpg" width="40px" height="40px"> FACEBOOK.INC &nbsp <span style="color: gray"><i class="material-icons">&#xe55c;</i></span> WESTERN, UK</h5>
+				</p>
+			</div>
+			<hr>
+				<div class="company">
+				<p>
+					<span class="job-role"> Full Stack Developer</span> <span class="freelance">Freelance</span>
+					<button class="applyjob">Apply Job</button>
+					<h5> <img src="company-2.jpg" width="40px" height="40px"> FACEBOOK.INC &nbsp <span style="color: gray"><i class="material-icons">&#xe55c;</i></span> WESTERN, UK</h5>
+				</p>
+			</div>
+			<hr>
+				<div class="company">
+				<p>
+					<span class="job-role"> Open Source Interactive Developer</span> <span class="parttime">Parttime</span>
+					<button class="applyjob">Apply Job</button>
+					<h5> <img src="company-2.jpg" width="40px" height="40px"> FACEBOOK.INC &nbsp <span style="color: gray"><i class="material-icons">&#xe55c;</i></span>WESTERN, UK</h5>
+				</p>
+			</div>
+			<hr>
+			
+			<nav class="bottum-nav">
+				<ul>
+					<li><a class="nav-num" href=""> < </a></li>
+					<li><a class="nav-num" id="active" href=""> 1 </a></li>
+					<li><a class="nav-num" href=""> 2 </a></li>
+					<li><a class="nav-num" href=""> 3 </a></li>
+					<li><a class="nav-num" href=""> 4 </a></li>
+					<li><a class="nav-num" href=""> 5 </a></li>
+					<li><a class="nav-num" href=""> > </a></li>
+				</ul>			
+			</nav>
+
+		</div>
+	</div>
+		<div class="div-bottom">
+    <center>
+      <font size="5px" color="white">Subscribe to our NewsLetter</font>
+        <font color="white"><p>Far far away,behind the word mountains,far from countries vokalia and consonantia,there lives the blind text.<br>Seperated they live in ,fill the email address</p></font>
+        <input type="text" id="i1" name="email" placeholder="emailID">
+        <button class="button1">Subscribe</button>
+
+    </center>
+    
+    <br>
+    <br>
+
+
+  </div>
+
+
+
+</div>
+</body>
+</html>
+
+		
+	
+	
+
+
